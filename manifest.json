@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Memory Optimizer",
+    "version": "1.0",
+    "description": "Optimizes memory by suspending inactive tabs using LRU cache and WASM.",
+    "permissions": ["tabs", "storage", "alarms"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    }
+  }

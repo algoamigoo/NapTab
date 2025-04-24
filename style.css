@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="number"], input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-left: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
