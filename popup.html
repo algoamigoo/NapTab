@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tab Memory Optimizer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Tab Memory Optimizer</h1>
-  
-  <section>
-    <h2>Settings</h2>
-    <label for="capacity">Max Active Tabs:</label>
-    <input type="number" id="capacity" min="1">
-    <button id="saveCapacity">Save</button>
-  </section>
-  
-  <section>
-    <h2>Whitelist</h2>
-    <ul id="whitelist"></ul>
-    <input type="text" id="newWhitelist" placeholder="Add URL">
-    <button id="addWhitelist">Add</button>
-  </section>
-  
-  <section>
-    <h2>Tab States</h2>
-    <h3>Active Tabs</h3>
-    <ul id="activeTabs"></ul>
-    <h3>Sleeping Tabs</h3>
-    <ul id="sleepingTabs"></ul>
-  </section>
-  
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NapTab</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>NapTab</h1>
+
+    <section>
+      <label for="capacity">Max Active Tabs:</label>
+      <input type="number" id="capacity" min="1" />
+      <button id="saveCapacity">Save</button>
+    </section>
+
+    <section>
+      <h2>Whitelist</h2>
+      <ul id="whitelist"></ul>
+      <input type="text" id="newWhitelist" placeholder="Add URL" />
+      <button id="addWhitelist">Add</button>
+    </section>
+
+    <section>
+      <h2>Tab States</h2>
+      <h3>Active Tabs</h3>
+      <ul id="activeTabs"></ul>
+      <h3>Sleeping Tabs</h3>
+      <ul id="sleepingTabs"></ul>
+    </section>
+
+    <script src="popup.js"></script>
+  </body>
 </html>

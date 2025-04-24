@@ -1,50 +1,105 @@
 body {
-    font-family: Arial, sans-serif;
-    width: 300px;
-    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 320px;
+    padding: 20px;
+    background-color: #f9fafa;
+    color: #333;
+    box-sizing: border-box;
   }
   
   h1 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
   }
   
   h2 {
     font-size: 16px;
-    margin-top: 15px;
+    color: #34495e;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
   }
   
   h3 {
     font-size: 14px;
-    margin-top: 10px;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
-  
-  input[type="number"], input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    margin-left: 5px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
   
   section {
     margin-bottom: 20px;
   }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 13px;
+    gap: 10px;
+    flex-wrap: wrap;
+    word-break: break-word;
+  }
+  
+  li span {
+    flex: 1;
+    word-break: break-word;
+  }
+  
+  li button {
+    padding: 4px 8px;
+    background-color: #e74c3c;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  li button:hover {
+    background-color: #c0392b;
+  }
+  
