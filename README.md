@@ -136,4 +136,4 @@ Rudra Jani
 @algoamigoo
 
 🚀 Check it out on the Chrome Web Store (coming soon)
-💬 💬 Have suggestions? [Open an issue](https://github.com/yourusername/naptab/issues)
+💬 Have suggestions? [Open an issue](https://github.com/yourusername/naptab/issues)
