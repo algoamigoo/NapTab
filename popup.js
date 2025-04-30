@@ -6,7 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const whitelistUl = document.getElementById("whitelist");
     whitelist.forEach((url) => addWhitelistItem(url, whitelist, whitelistUl));
   });
+  // Load saved theme
+  chrome.storage.sync.get("theme", (result) => {
+    const theme = result.theme || "light";
+    document.body.className = theme;
+  });
 
+  // Theme toggle button
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    const isLight = document.body.classList.contains("light");
+    const newTheme = isLight ? "dark" : "light";
+    document.body.className = newTheme;
+    chrome.storage.sync.set({ theme: newTheme });
+  });
   // Save capacity
   document.getElementById("saveCapacity").addEventListener("click", () => {
     const capacity = parseInt(document.getElementById("capacity").value);

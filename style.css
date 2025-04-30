@@ -1,105 +1,283 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 320px;
-    padding: 20px;
-    background-color: #f9fafa;
-    color: #333;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-  
-  h2 {
-    font-size: 16px;
-    color: #34495e;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-  }
-  
-  h3 {
-    font-size: 14px;
-    color: #555;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-  
-  input[type="number"],
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    padding: 8px 12px;
-    font-size: 14px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    padding: 8px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 13px;
-    gap: 10px;
-    flex-wrap: wrap;
-    word-break: break-word;
-  }
-  
-  li span {
-    flex: 1;
-    word-break: break-word;
-  }
-  
-  li button {
-    padding: 4px 8px;
-    background-color: #e74c3c;
-    border-radius: 4px;
-    font-size: 12px;
-    margin-left: 10px;
-  }
-  
-  li button:hover {
-    background-color: #c0392b;
-  }
-  
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 320px;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #f0f4f8;
+  color: #1e3a8a;
+}
+
+body.dark {
+  background-color: #1e293b;
+  color: #e0e7ff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+body.light h1 {
+  color: #1e3a8a;
+}
+
+body.dark h1 {
+  color: #60a5fa;
+}
+
+#themeToggle {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+body.light #themeToggle {
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+
+body.dark #themeToggle {
+  border-color: #475569;
+  color: #93c5fd;
+}
+
+body.light #themeToggle:hover {
+  background-color: #dbeafe;
+}
+
+body.dark #themeToggle:hover {
+  background-color: #334155;
+}
+
+#themeToggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+body.light h2 {
+  color: #1e40af;
+  border-color: #bfdbfe;
+}
+
+body.dark h2 {
+  color: #93c5fd;
+  border-color: #475569;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+body.light h3 {
+  color: #3b82f6;
+}
+
+body.dark h3 {
+  color: #a5b4fc;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+body.light label {
+  color: #1e40af;
+}
+
+body.dark label {
+  color: #93c5fd;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+body.light input[type="number"],
+body.light input[type="text"] {
+  background-color: #ffffff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+}
+
+body.dark input[type="number"],
+body.dark input[type="text"] {
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #e0e7ff;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+body.light input[type="range"] {
+  accent-color: #3b82f6;
+}
+
+body.dark input[type="range"] {
+  accent-color: #60a5fa;
+}
+
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+body.light button {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+body.dark button {
+  background-color: #60a5fa;
+  color: #1e293b;
+}
+
+body.light button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+body.dark button:hover {
+  background-color: #3b82f6;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  gap: 10px;
+  flex-wrap: wrap;
+  word-break: break-word;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.light li {
+  border-color: #bfdbfe;
+}
+
+body.dark li {
+  border-color: #475569;
+}
+
+body.light li.active-tab {
+  background-color: #dbeafe;
+}
+
+body.dark li.active-tab {
+  background-color: #334155;
+}
+
+body.light li.sleeping-tab {
+  background-color: #f0f4f8;
+  opacity: 0.8;
+}
+
+body.dark li.sleeping-tab {
+  background-color: #1e293b;
+  opacity: 0.8;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+li button {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+body.light li button {
+  background-color: #ef4444;
+}
+
+body.dark li button {
+  background-color: #f87171;
+}
+
+body.light li button:hover {
+  background-color: #dc2626;
+}
+
+body.dark li button:hover {
+  background-color: #ef4444;
+}
