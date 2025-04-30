@@ -1,52 +1,48 @@
-💤 NapTab
-=========
+# 💤 NapTab  
+*Put your tabs to sleep — not your computer.*
 
-**Put your tabs to sleep, not your computer.**\
-A smart Chrome extension that auto-suspends inactive tabs to free up memory --- powered by WebAssembly for maximum performance.
+A high-performance Chrome extension that auto-suspends inactive tabs using a blazing-fast **C++ LRU cache** compiled to **WebAssembly** — freeing up your memory without sacrificing control.
 
-* * * * *
+---
 
-🧠 Why NapTab?
---------------
+## 🧠 Why NapTab?
 
-Modern browsing is a mess of open tabs and sluggish performance. **NapTab** brings peace to your browser by automatically "napping" tabs you haven't used in a while.
+Modern browsing = 20+ tabs, sluggish Chrome, drained memory.  
+**NapTab** brings order to the chaos — automatically "napping" tabs you haven’t used recently, keeping your workflow snappy and your RAM breathing easy.
 
-⚡ Built for speed\
-💻 Powered by C++ + WebAssembly\
-📊 Fully transparent with a real-time tab dashboard
+---
 
-* * * * *
+## ⚡ Built Different
 
-✨ Key Features
---------------
+- 💻 **C++ + WebAssembly Core** for ultra-fast memory logic  
+- 🚀 **LRU-based suspension** in O(1) time  
+- 📊 **Live dashboard** to track, suspend, or restore tabs  
+- 🧘 100% privacy-respecting — no data tracking, ever
 
--   **🌙 Auto Nap Tabs**\
-    Suspends the least recently used tabs once your open tabs exceed the limit (default: 10).
+---
 
--   **🛑 Whitelist Support**\
-    Keep your essentials (e.g., Spotify, work docs) always awake.
+## ✨ Features
 
--   **📋 NapTab Dashboard**\
-    See what's active, what's sleeping, and restore tabs in a click.
+### 🌙 Smart Auto-Nap
+Suspends **least recently used** tabs when your open tab count exceeds a limit (default: **10**).
 
--   **🚀 High-Performance Core**\
-    LRU cache logic in C++ compiled to WebAssembly for O(1) speed.
+### 🛡️ Whitelist Essentials
+Add important URLs (e.g., Spotify, Docs) to your whitelist — they’ll always stay awake.
 
--   **🔄 Real-Time Monitoring**\
-    Seamless tab tracking via Chrome APIs.
+### 📋 NapTab Dashboard
+View what's active, what's napping, and bring any tab back with one click.
 
-* * * * *
+### 🧠 Intelligent Tab Tracking
+Leverages Chrome APIs + custom LRU logic for seamless tab management.
 
-🎯 Who It's For
----------------
+---
 
--   🧑‍💻 Developers with tab overload
+## 🎯 Who Should Use NapTab?
 
--   📚 Students doing deep research
-
--   🧠 Productivity geeks
-
--   💡 Anyone who wants Chrome to stop eating RAM
+- 👨‍💻 Developers juggling dozens of tabs  
+- 📚 Students deep in research rabbit holes  
+- 🔬 Productivity pros who hate sluggish browsers  
+- 🧠 Anyone who wants **Chrome, but smarter**
 
 * * * * *
 
@@ -131,14 +127,13 @@ emcc lru.cpp -s WASM=1 \
 -   **Manifest V3** for efficient background execution
 
 * * * * *
+☕ Support the Project
+If NapTab made your Chrome faster, consider supporting with a coffee:
 
-🛠️ Roadmap
------------
+[![Buy Me a Coffee](https://buymeacoffee.com/itsrudrajaw)
+👨‍💻 Author
+Rudra Jani
+@algoamigoo
 
--   🧾 Memory usage stats per tab
-
--   ⭐ Regex & wildcard whitelist support
-
--   🔁 "Restore All" tabs button
-
--   💡 Smarter suspension based on tab memory usage
+🚀 Check it out on the Chrome Web Store (coming soon)
+💬 💬 Have suggestions? [Open an issue](https://github.com/yourusername/naptab/issues)
