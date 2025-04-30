@@ -130,7 +130,7 @@ emcc lru.cpp -s WASM=1 \
 ☕ Support the Project
 If NapTab made your Chrome faster, consider supporting with a coffee:
 
-[[Buy Me a Coffee](https://buymeacoffee.com/itsrudrajaw)
+[[Buy Me a Coffee](https://buymeacoffee.com/itsrudrajaw)]
 Author
 Rudra Jani
 @algoamigoo
