@@ -4,7 +4,6 @@
 A high-performance Chrome extension that auto-suspends inactive tabs using a blazing-fast **C++ LRU cache** compiled to **WebAssembly** — freeing up your memory without sacrificing control.
 
 ---
-
 ## 🧠 Why NapTab?
 
 Modern browsing = 20+ tabs, sluggish Chrome, drained memory.  
@@ -45,6 +44,8 @@ Leverages Chrome APIs + custom LRU logic for seamless tab management.
 - 🧠 Anyone who wants **Chrome, but smarter**
 
 * * * * *
+**Demo Video**
+https://github.com/user-attachments/assets/780afd65-3107-4bf7-80d5-1a1661b27d3f
 
 🛠️ Installation
 ----------------
