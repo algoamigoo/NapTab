@@ -87,12 +87,6 @@ Module.onRuntimeInitialized = () => {
     }
     checkAndDiscard();
   });
-
-  // Periodic cleanup (every 5 minutes)
-  chrome.alarms.create("cleanup", { periodInMinutes: 5 });
-  chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === "cleanup") checkAndDiscard();
-  });
 };
 
 // Check and discard inactive tabs
