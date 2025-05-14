@@ -3,7 +3,7 @@
   "name": "NapTab",
   "version": "1.0",
   "description": "Optimizes memory by suspending inactive tabs using LRU cache and WASM.",
-  "permissions": ["tabs", "storage", "alarms"],
+  "permissions": ["tabs", "storage"],
   "background": {
     "service_worker": "background.js"
   },
